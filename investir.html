@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme d'Investissement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .vip-card {
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .vip-card:hover {
+            transform: scale(1.05);
+        }
+        .vip-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .vip-info {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        .vip-info strong {
+            color: #333;
+        }
+        .invest-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .invest-btn:hover {
+            background-color: #45a049;
+        }
+        .error-message {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #ffdddd;
+            color: red;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center; color: #333;">Veuillez choisir votre niveau d'investissement et commencé a gagner avec RAMCHOC''</h1>
+    <div class="container">
+        <!-- VIP 1 -->
+        <div class="vip-card">
+            <div class="vip-title">VIP 1</div>
+            <div class="vip-info">
+                Investissement: <strong>7 500 FCFA</strong><br>
+                Revenus quotidiens: <strong>3 000 FCFA</strong><br>
+                Cycle: <strong>7 jours</strong><br>
+                Revenus totaux: <strong>21 000 FCFA</strong>
+            </div>
+            <button class="invest-btn" onclick="showError(this)">Investir</button>
+            <div class="error-message">Solde insuffisant</div>
+        </div>
+
+        <!-- VIP 2 -->
+        <div class="vip-card">
+            <div class="vip-title">VIP 2</div>
+            <div class="vip-info">
+                Investissement: <strong>20 000 FCFA</strong><br>
+                Revenus quotidiens: <strong>8 500 FCFA</strong><br>
+                Cycle: <strong>7 jours</strong><br>
+                Revenus totaux: <strong>59 500 FCFA</strong>
+            </div>
+            <button class="invest-btn" onclick="showError(this)">Investir</button>
+            <div class="error-message">Solde insuffisant</div>
+        </div>
+
+        <!-- VIP 3 -->
+        <div class="vip-card">
+            <div class="vip-title">VIP 3</div>
+            <div class="vip-info">
+                Investissement: <strong>50 000 FCFA</strong><br>
+                Revenus quotidiens: <strong>18 000 FCFA</strong><br>
+                Cycle: <strong>7 jours</strong><br>
+                Revenus totaux: <strong>126 000 FCFA</strong>
+            </div>
+            <button class="invest-btn" onclick="showError(this)">Investir</button>
+            <div class="error-message">Solde insuffisant</div>
+        </div>
+
+        <!-- VIP 4 -->
+        <div class="vip-card">
+            <div class="vip-title">VIP 4</div>
+            <div class="vip-info">
+                Investissement: <strong>100 000 FCFA</strong><br>
+                Revenus quotidiens: <strong>40 000 FCFA</strong><br>
+                Cycle: <strong>7 jours</strong><br>
+                Revenus totaux: <strong>280 000 FCFA</strong>
+            </div>
+            <button class="invest-btn" onclick="showError(this)">Investir</button>
+            <div class="error-message">Solde insuffisant</div>
+        </div>
+
+        <!-- VIP 5 -->
+        <div class="vip-card">
+            <div class="vip-title">VIP 5</div>
+            <div class="vip-info">
+                Investissement: <strong>250 000 FCFA</strong><br>
+                Revenus quotidiens: <strong>100 000 FCFA</strong><br>
+                Cycle: <strong>7 jours</strong><br>
+                Revenus totaux: <strong>700 000 FCFA</strong>
+            </div>
+            <button class="invest-btn" onclick="showError(this)">Investir</button>
+            <div class="error-message">Solde insuffisant</div>
+        </div>
+
+        <!-- VIP 6 -->
+        <div class="vip-card">
+            <div class="vip-title">VIP 6</div>
+            <div class="vip-info">
+                Investissement: <strong>500 000 FCFA</strong><br>
+                Revenus quotidiens: <strong>225 000 FCFA</strong><br>
+                Cycle: <strong>7 jours</strong><br>
+                Revenus totaux: <strong>1 575 000 FCFA</strong>
+            </div>
+            <button class="invest-btn" onclick="showError(this)">Investir</button>
+            <div class="error-message">Solde insuffisant</div>
+        </div>
+    </div>
+
+    <script>
+        function showError(button) {
+            const errorMessage = button.nextElementSibling;
+            errorMessage.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
